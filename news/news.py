@@ -1,4 +1,5 @@
 # pip install requests
+
 # pip install bs4
 
 import requests
@@ -17,7 +18,7 @@ noticia = site.find('div', attrs={'class': 'feed-post-body'})
 #titulo
 titulo = noticia.find('a', attrs={'class': 'feed-post-link'})
 
-print('\nTitulo: ',titulo.text ,'\n')
+print('\nTitulo - ',titulo.text ,'\n')
 
 #subtitulo
 textoRelacionado = noticia.find('a', attrs={'class': 'bstn-relatedtext'})
